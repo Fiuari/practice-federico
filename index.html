@@ -7,18 +7,310 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Мій вебпроєкт</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Головна секція</h2>
-            <p>Це перша сторінка навчального вебпроєкту.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2026 Навчальна практика</p>
-    </footer>
+    <div class="container">
+        <header>
+            <div class="logo">BankHotel</div>
+            <button class="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="main-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Restaurant</a></li>
+                    <li><a href="#">Conference Hall</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="contact">
+                <a href="tel:+380322975020">+38 032 297 50 20</a>
+            </div>
+            <p class="adress">8 Lystopadovoho Chynu, Lviv</p>
+            <ul class="socials">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="title-wrapper">
+                    <h1>BankHotel</h1>
+                    <p>ROOMS // RESTAURANT // CONGRESS HALL // WINE BAR</p>
+                    <div class="buttons">
+                        <img src="" alt="">
+                        <p>Since 1973</p>
+                    </div>
+                     <p class="description">The luxurious hotel in the most beautiful European city with an exclusive restaurant, conference-hall, and art-bar.</p>
+                    <button class="polygon-btn" aria-label="Book room">
+                        <svg viewBox="0 0 100 100" class="polygon">
+                            <polygon points="50,5 95,27 95,73 50,95 5,73 5,27" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="enum-wrapper">
+                    <label for="check-in">Check in</label>
+                    <select id="check-in" name="check-in">
+                        <option value="1">Rooms</option>
+                        <option value="2">Restaurant</option>
+                        <option value="3">Conference Hall</option>
+                        <option value="4">Wine Bar</option>
+                    </select>
+                    <label for="check-out">Check out</label>
+                    <select id="check-out" name="check-out">
+                        <option value="1">Rooms</option>
+                        <option value="2">Restaurant</option>
+                        <option value="3">Conference Hall</option>
+                        <option value="4">Wine Bar</option>
+                    </select>
+                    <button class="booking">book room</button>
+                </div>
+                <div class="inf-wrapper">
+                    <div>
+                        <a tel:+380322975020>+38 032 297 50 20</a>
+                        <address>8 Lystopadovoho Chynu, Lviv</address>
+                    </div>
+                    <p class="inf">Art & Congress <br><i>hall</i></p>
+                </div>
+            </section>
+
+            <section class="about-us-section">
+                <div class="decor-wrapper">
+                </div>
+                <div class="about-wrapper">
+                    <img src="" alt="">
+                    <h2>about<br>us</h2>
+                    <h5>High quality</h5>
+                    <p>The five-star Bank Hotel was reopened to visitors in 2016. The building was renovated and modernized to meet the expectations of the most demanding guests. We offer luxurious rooms, numerous facilities, and exceptional service. </p>
+                    <div class="blyamba"></div>
+                    <img src="" alt="">
+                    <button><p><i>Rooms</i><br>and<br>apartments</p></button>
+                </div>
+            </section>
+
+            <section class="rooms-section">
+                <div class="rooms-title-wrapper">
+                    <h2>Rooms<br>& apartments</h2>
+                    <p>All room decoration was made with ecological certified and safe materials.</p>
+                </div>
+                <div class="rooms-wrapper">
+                    <img src="" alt="" class="pres-img">
+                    <button class="rooms-next-btn"></button>
+                    <div class="buttons">
+                        <img src="" alt="">
+                        <p>Since 1973</p>
+                    </div>
+                    <div class="rooms-text-wrapper">
+                        <h3>Superior twin</h3>
+                        <p>The Superior twin is perfect for those who plan to stay long. The spacious and bright room is equipped with deluxe Italian furniture and has a beautiful view to the historical part of the city. Stylish interior design and comfortable beds will make your stay cozy and pleasant.</p>
+                        <p class="pagecounter">01 / 04</p>
+                    </div>
+                    <div class="rooms-booking-wrapper">
+                        <img src="" alt="">
+                        <button class="booking">book room</button>
+                    </div>
+                </div>
+                <div class="rooms-wrapper">
+                    <img src="" alt="" class="pres-img">
+                    <button class="rooms-next-btn"></button>
+                    <div class="buttons">
+                        <img src="" alt="">
+                        <p>Since 1973</p>
+                    </div>
+                    <div class="rooms-text-wrapper">
+                        <h3>Deluxe double</h3>
+                        <p>The Deluxe double is a perfect choice for couples or friends looking for a comfortable stay. The room is tastefully decorated with high-quality furnishings and offers a cozy atmosphere with a beautiful view of the city.</p>
+                        <p class="pagecounter">02 / 04</p>
+                    </div>
+                    <div class="rooms-booking-wrapper">
+                        <img src="" alt="">
+                        <button class="booking">book room</button>
+                    </div>
+                </div>
+                <div class="rooms-wrapper">
+                    <img src="" alt="" class="pres-img">
+                    <button class="rooms-next-btn"></button>
+                    <div class="buttons">
+                        <img src="" alt="">
+                        <p>Since 1973</p>
+                    </div>
+                    <div class="rooms-text-wrapper">
+                        <h3>Presidential suite</h3>
+                        <p>The Presidential Suite is the most luxurious accommodation in the hotel. It features a spacious living area, a separate bedroom, and a private bathroom with a Jacuzzi. The suite is elegantly decorated with high-quality furnishings and offers stunning views of the city.</p>
+                        <p class="pagecounter">03 / 04</p>
+                    </div>
+                    <div class="rooms-booking-wrapper">
+                        <img src="" alt="">
+                        <button class="booking">book room</button>
+                    </div>
+                </div>
+                <div class="rooms-wrapper">
+                    <img src="" alt="" class="pres-img">
+                    <button class="rooms-next-btn"></button>
+                    <div class="buttons">
+                        <img src="" alt="">
+                        <p>Since 1973</p>
+                    </div>
+                    <div class="rooms-text-wrapper">
+                        <h3>Cozy single</h3>
+                        <p>The Cozy single is ideal for solo travelers seeking a comfortable and affordable stay. The room is thoughtfully designed with all necessary amenities and offers a peaceful atmosphere.</p>
+                        <p class="pagecounter">04 / 04</p>
+                    </div>
+                    <div class="rooms-booking-wrapper">
+                        <img src="" alt="">
+                        <button class="booking">book room</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="our-facilities">
+                <div class="facilities-grid-wrapper">
+                    <p class="inf">Art & Congress <br><i>hall</i></p>
+                    <img src="" alt="">
+                    <h2>Our<br>facilities</h2>
+                    <p>Bank Hotel offers you a wide range of additional services and facilities. Visit our restaurant to try exclusive meals, book a conference hall to organize a business meeting, or relax in the art-bar. </p>
+                    <div class="img-with-blyamba">
+                        <img src="" alt="">
+                        <p class="blyamba"></p>
+                    </div>
+                </div>
+
+                <section class="amenities">
+                    <article class="accordion-item">
+                        <header>
+                            <img class="accordion-icon" src="" alt="">
+                            <span class="number">01</span>
+                            <span class="title">Ice Restaurant</span>
+                            <button class="accordion-toggle" aria-expanded="false"></button>
+                        </header>
+                        <div class="accordion-content">
+                        <p>The hotel’s exclusive infrastructure is complemented by the unique atmosphere of the Safe Restaurant. Author’s menu, extensive wine card, and live music will set you for the correct mood.</p>
+                        <figure>
+                            <img src="restaurant.jpg" alt="Ice Restaurant interior">
+                        </figure>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item">
+                        <header>
+                        <img class="accordion-icon" src="" alt="">
+                            <span class="number">02</span>
+                            <span class="title">Conference hall</span>
+                            <button class="accordion-toggle" aria-expanded="false"></button>
+                        </header>
+                        <div class="accordion-content">
+                        <p>The spacious conference hall is equipped with modern technology and comfortable seating, making it ideal for business meetings, seminars, and large-scale events. Professional service ensures every detail is taken care of.</p>
+                        <figure>
+                            <img src="conference.jpg" alt="Conference hall interior">
+                        </figure>
+                        </div>
+                    </article>
+
+                    <article class="accordion-item">
+                        <header>
+                        <img class="accordion-icon" src="" alt="">
+                            <span class="number">03</span>
+                            <span class="title">Wine Bar "Reserve"</span>
+                            <button class="accordion-toggle" aria-expanded="false"></button>
+                        </header>
+                        <div class="accordion-content">
+                        <p>The elegant wine bar “Reserve” offers a curated selection of fine wines and signature cocktails. Its cozy atmosphere and refined design create the perfect setting for relaxed evenings and private gatherings.</p>
+                        <figure>
+                            <img src="winebar.jpg" alt="Wine bar interior">
+                        </figure>
+                        </div>
+                    </article>
+                </section>
+            </section>
+
+            <section class="best-apartments">
+                <h2>Best<br>apartments</h2>
+                <p>All room decoration was made with ecological certified and safe materials.</p>
+                <div class="wave"></div>
+            </section>
+
+            <section class="our-gallery">
+                <p class="inf">Art & Congress <br><i>hall</i></p>
+                <div class="blyamba"></div>
+                <h2>Our<br>gallery</h2>
+                <p>Explore our spacious rooms with the gorgeous view to the historical part of the city. Each room has an exclusive interior design decorated with modern art pieces that will make your stay unforgettable. </p>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <div class="gallery-prymit-wr">
+                    <svg>
+                        <polygon></polygon>
+                    </svg>
+                    <p><i>It is our pleasure to meet your most unrealistic expectations.</i></p>
+                </div>
+                <p>     Bank hotel <span>Bank__hotel©</span> Bank hotel Bank hotel<br> Bank hotel  Bank hotel Bank  hotel Bank hotel </p>
+            </section>
+
+            <section class="get-in-touch">
+                <div class="git-wrapper">
+                    <a tel:+380322975020>+38 032 297 50 20</a>
+                    <h2>Get in <br>touch</h2>
+                    <p>Find a room</p>
+                    <div class="enum-wrapper">
+                    <label for="check-in">Check in</label>
+                    <select id="check-in" name="check-in">
+                        <option value="1">Rooms</option>
+                        <option value="2">Restaurant</option>
+                        <option value="3">Conference Hall</option>
+                        <option value="4">Wine Bar</option>
+                    </select>
+                    <label for="check-out">Check out</label>
+                    <select id="check-out" name="check-out">
+                        <option value="1">Rooms</option>
+                        <option value="2">Restaurant</option>
+                        <option value="3">Conference Hall</option>
+                        <option value="4">Wine Bar</option>
+                    </select>
+                    <button class="booking">book room</button>
+                </div>
+                </div>
+                <div class="git-img-wrapper">
+                    <address>8 Lystopadovoho Chynu, Lviv</address>
+                    <img src="" alt="">
+                </div>            
+            </section>
+
+        </main>
+
+        <footer>
+            <section class="about">
+                <h2>About Us</h2>
+                <p>The five-star hotel in a beautiful European city with a modern restaurant, conference-hall, and art-bar.</p>
+                <p class="copyright">©2021 All rights reserved. BankHotel.</p>
+            </section>
+            <section class="news">
+                <h2>News</h2>
+                <p>Sign up to our newsletter not to miss exclusive offers and information about the upcoming events.</p>
+                <form class="newsletter" action="#" method="post">
+                <label for="email">Email</label>
+                <div class="input-wrapper">
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
+                    <button type="submit" aria-label="Subscribe">➝</button>
+                </div>
+                </form>
+            </section>
+            <section class="social">
+                <h2>Social</h2>
+                <nav>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+                </nav>
+            </section>
+        </footer>
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
