@@ -1,12 +1,839 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* хедер */
+.header {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-body {
-    font-family: Arial, sans-serif;
+.main-menu {
+    display: flex;
+    gap: 70px;
+    list-style-type: none;
 }
-img {
-    max-width: 100%;
+a {
+    text-decoration: none;
+}
+
+/* геро */
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 1430px;
+}
+.title-wrapper {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 70% 25% 5%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.title-wrapper h1 {
+    font-size: 220px;
+    font-weight: 400;
+    color: #FFFCF6;
+}
+.preview {
+    font-size: 26px;
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: center;
+}
+.buttons {
+    width: 249px;
+    height: 70px;
+    border: 1px solid rgba(255, 252, 246, 0.32);
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    font-size: 22px;
+    gap: 20px;
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: start;
+    margin-top: 30px;
+}
+
+.down {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+    width: 60%;
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.enum-wrapper {
+  background-image: url('../img/hero.png');
+  width: 100%;
+  height: 780px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.booking-form {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.form-group:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 60px; /* довжина рисочки */
+    background-color: #FFFCF6;
+    opacity: 32%;
+}
+
+.dropdown {
+    width: 370px;
+    height: 150px;
+    padding: 45px;
+    background-color: rgba(49, 63, 56, 0.48);
+    font-size: 16px;
+    appearance: none;
+    border: none;
+    background-image: url('../img/icons/down.png');
+    background-repeat: no-repeat;
+    background-position: right 45px center;
+    background-size: 16px;
+    text-transform: uppercase;
+}
+
+.booking {
+    width: 370px;
+    height: 150px;
+    padding: 12px 24px;
+    background-color: #FCD043;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.inf-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 36px;
+}
+.inf-wrapper>div a, .inf-wrapper>div address {
+    text-decoration: underline;
+}
+.inf {
+    text-align: end;
+}
+
+/* ебаут */
+.decor-wrapper {
+    position: relative;
+    z-index: 1;
+}
+.eclipse {
+    width: 70vw;
+    height: 70vw;
+    /* transform: rotate(45deg); */
+    border-top: 1px solid #3F5148;
+    /* border-left: 1px solid #3F5148; */
+    border-radius: 100%;
+}
+.eclipse::before {
+    content: '';
+    width: 65vw;
+    height: 1px;
+    background-color: #3F5148;
+    position: absolute;
+    right: 0;
+}
+.eclipse::after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background-color: #3F5148;
+    position: absolute;
+    left: 70vw;
+}
+.about-us-section {
+    position: relative;
+}
+.about-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 36% 34% 30%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+.about-wrapper h2 {
+    text-transform: uppercase;
+    font-size: 150px;
+    line-height: 140px;
+    font-weight: 400;
+    grid-area: 1/2/2/3;
+    text-align: end;
+}
+.about-wrapper img {
+    grid-area: 1/1/3/2;
+}
+.abus-text-wr{
+    grid-area: 2/2/3/3;
+    justify-self: end;
+}
+.abus-text-wr h5 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 3%;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.abus-text-wr p {
+    width: 440px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.blyamba {
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/icons/flower.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(230deg);
+    position: absolute;
+    top: -30%;
+    left: -40%;
+}
+.blyamba-wr {
+    position: relative;
+    justify-self: end;
+}
+.plg-style {
+    position: relative;
+    justify-self: end;
+    margin-right: 100px;
+    background-image: url(../img/icons/down.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: bottom 45px center;
+}
+.plg-style p {
+    position: absolute;
+    font-weight: 400;
+    font-size: 14px;
+    top: 20%;
+    text-align: left;
+}
+.tc {
+    width: 200px;
+    text-align: center;
+}
+
+/* кімнати */
+.rooms-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    padding-bottom: 200px;
+}
+.rooms-title-wrapper {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.rooms-title-wrapper h2 {
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+.rooms-title-wrapper p {
+    width: 440px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.rooms-title-wrapper {
+  margin-bottom: 60px;
+}
+
+.rooms-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 26% 33% 40%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.pres-img {
+    width: 60%;
+
+    grid-area: 1/1/2/2;
+}
+.rooms-wrapper .poly-arrow {
+    justify-self: start;
+    align-self: self-end;
+    margin-bottom: 70px;
+}
+
+
+.rooms-wrapper .buttons {
+    border: 1px solid #313F38;
+    grid-area: 1/2/2/3;
+    margin-top: 130px;
+}
+.rooms-text-wrapper {
+    grid-area: 2/2/3/3;
+    height: 300px;
+}
+.rooms-text-wrapper h3 {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 170%;
+    letter-spacing: 3%;
+    text-transform: capitalize;
+}
+.rooms-text-wrapper p {
+    width: 440px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+.pagecounter {
+    margin-top: 60px;
+}
+.rooms-booking-wrapper {
+    grid-area: 1/3/3/4;
+    width: 95%;
+    height: 100%;
+    overflow: hidden;
+}
+.rooms-booking-wrapper .poly-booking {
+    z-index: 10;
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+
+}
+
+
+/* пріколюхи */
+
+.our-facilities {
+    padding-top: 200px;
+    padding-bottom: 300px;
+}
+.our-facilities::before {
+    width: 95vw;
+    height: 1px;
+    background-color: #313F38;
+}
+.facilities-grid-wrapper {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 50% 30%;
+}
+.facilities-grid-wrapper .inf {
+    height: 800px;
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: left;
+    grid-area: 1/1/2/2;
+}
+.facilities-grid-wrapper h2 {
+    width: 657px;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 130px;
+    height: 420px;
+    text-transform: uppercase;
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/icons/Star.png);
+    background-repeat: no-repeat;
+    background-size: 70px;
+    background-position: 20% 85%;
+}
+.facilities-grid-wrapper h2 span {
+    align-self: flex-end;
+}
+.facilities-grid-wrapper .img-with-blyamba {
+    position: relative;
+    grid-area: 1/3/2/4;
+    width: 646px;
+    align-self: end;
+    justify-self: end;
+}
+.img-with-blyamba img {
+    width: 80%;
+    justify-self: end;
+}
+.blyamba-next {
+     width: 200px;
+    height: 200px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: -28%;
+    left: 5%;
+}
+.facilimg {
+    grid-area: 2/1/3/2;
+    align-self: end;
+    width: 60%;
+}
+.facilp {
+    width: 350px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    grid-area: 2/2/3/3;
+    align-self: end;
+    color: #1B3B36;
+}
+
+/* акордеон згорнений */
+.accordion-item {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #313f3854;
+}
+.accordion-item header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.img-cell {
+    width: 285px;
+    height: 285px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-cell img {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
     display: block;
+}
+.number, .title {
+    font-family: 'Miracle';
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+.title {
+    width: 650px;
+}
+.accordion-toggle {
+    width: 90px;
+    border: none;
+    background: none;
+}
+.accordion-content {
+    display: none;
+}
+
+
+/* найкраще */
+.best-apartments {
+    width: 100%;
+    height: 1080px;
+    background-image: url(../img/best.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.best-apartments h2 {
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 130px;
+    text-transform: uppercase;
+}
+.best-apartments p {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    text-transform: uppercase;
+    width: 20%;
+}
+.wave {
+    position: absolute;
+    bottom: 5%;
+}
+
+/* галерея */
+.our-gallery {
+    height: 135vw;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.our-gallery .inf {
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.gallery-title-wrapper {
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+.blyamba-gallery {
+     width: 200px;
+    height: 200px;
+    background-image: url(../img/icons/flower.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+.gallery-title-wrapper h2 {
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 130px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.gallery-title-wrapper p {
+    width: 450px;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.galone, .galtwo, .galthree, .galfour, .galfive {
+    position: absolute;
+}
+.galone {
+    left: 30%;
+    top: 37%;
+}
+.galtwo {
+    left: -6%;
+    top: 20%;
+}
+.galthree {
+    top: 60%;
+}
+.galfour {
+    right: -4%;
+    top: 21%;
+}
+.galfive {
+    right: 0;
+    top: 73%;
+    z-index: 10;
+}
+.gallery-prymit-wr .polygon polygon {
+    fill: #FCD043;
+    stroke: none;
+}
+.gallery-prymit-wr .polygon {
+    width: 100px;
+    height: 100px;
+}
+.gallery-prymit-wr {
+    width: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+    position: absolute;
+    top: 57%;
+    left: 30%;
+}
+.gallery-decor {
+    width: 120%;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 160px;
+    position: absolute;
+    top: 80%;
+    left: -5%;
+    color: #fffcf61b;
+}
+.gallery-decor span {
+    color: #FFFCF6;
+}
+
+
+
+
+
+/* тач */
+
+.get-in-touch {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    position: relative;
+}
+.git-wrapper {
+    height: 1180px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% 60% 5% 25%;
+}
+.git-wrapper a {
+    width: max-content;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 80px;
+    color: #1B3B36;
+    border-bottom: 1px solid #1b3b365b;
+    grid-area: 1/1/2/2;
+}
+.git-wrapper address, .git-wrapper p {
+    font-weight: 400;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #1B3B36;
+    font-style: normal;
+    margin-bottom: 30px;
+
+}
+.git-wrapper p {
+    grid-area: 3/1/4/2;
+}
+.git-img-wrapper {
+    grid-area: 2/2/3/3;
+}
+.git-enum-wrapper {
+  display: flex;
+  grid-area: 4/1/5/2;
+}
+
+.booking-form {
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.git-form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.git-form-group:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+    right: 0;
+    top: 50%;
+    width: 1px;
+    height: 60px; /* довжина рисочки */
+    background-color: #313F38;
+    opacity: 32%;
+}
+.git-dropdown:last-child {
+    border-left: none;
+}
+.git-dropdown {
+    width: 370px;
+    height: 150px;
+    padding: 45px;
+    background-color: #FFFCF6;
+    font-size: 16px;
+    appearance: none;
+    border: 1px solid #313F38;
+    border-right: none;
+    background-image: url('../img/icons/down.png');
+    background-repeat: no-repeat;
+    background-position: right 45px center;
+    background-size: 16px;
+    text-transform: uppercase;
+}
+
+.git-booking {
+    width: 370px;
+    height: 150px;
+    padding: 12px 24px;
+    background-color: #313F38;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.git-wave {
+    position: absolute;
+    top: 20%;
+}
+.git-title {
+    font-weight: 400;
+    font-size: 300px;
+    line-height: 300px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    z-index: 20;
+    background-image: url(../img/icons/Starbig.png);
+    background-size: 150px;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+}
+.git-title span {
+    justify-self: end;
+    align-self: end;
+}
+/* футер */
+footer {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
+  border-top: 1px solid #313f3854;
+}
+
+.footsec {
+  width: 285px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 50px;
+  margin-right: 150px;
+}
+
+.footertitle {
+  font-weight: 400;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #1B3B36;
+}
+
+.footsec p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1B3B36;
+}
+
+.copyright {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: auto;
+}
+
+/* Newsletter */
+.newsletter .input-wrapper {
+    width: 285px;
+    height: 64px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #1b3b365b;
+  padding: 5px 20px;
+}
+
+.newsletter input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  color: #1B3B36;
+}
+
+.newsletter input::placeholder {
+  color: rgba(27, 59, 54, 0.5);
+}
+
+.newsletter button {
+  border: none;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+  color: #1B3B36;
+  transition: color 0.3s ease;
+}
+
+.newsletter button:hover {
+  color: #FCD043;
+}
+
+/* Social links */
+.footsec nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footsec nav ul li {
+  margin-bottom: 10px;
+}
+
+.footsec nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #1B3B36;
+  transition: color 0.3s ease;
+}
+
+.footsec nav ul li a:hover {
+  color: #FCD043;
+}
+
+@media screen and (min-width: 1920px) {
+    .burger {
+        display: none;
+    }
+    .adress-h {
+        display: none;
+    }
+    .socials-h {
+        display: none;
+    }
 }

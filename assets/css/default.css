@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Miracle';
+    src: url('../fonts/Miracle.otf') format('truetype');  /* Шлях до файлу шрифту */
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Miracle', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.p30 {
+    padding: 30px;
+}
+
+.primary-color-bckg {
+    background-color: #313f38;
+}
+.secondary-color-bckg {
+    background-color: #fffcf6;
+}
+.white {
+    color: #FFFCF6;
+}
+.yellow {
+    color: #FCD043;
+}

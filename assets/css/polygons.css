@@ -1,0 +1,73 @@
+.octagon, .decagon, .decagon-rot {
+    background-color: transparent;
+    border: none;
+    position: relative;
+}
+
+/* Восьмикутник: особливий кут оберту */
+.octagon .polygon polygon {
+  transform: rotate(23deg);
+  transform-origin: center;
+}
+
+/* Десятикутник без оберту */
+.decagon .polygon polygon {
+  transform: rotate(0deg);
+}
+.decagon .polygon {
+    width: 200px;
+    height: 200px;
+}
+
+/* Десятикутник з обертом на 90 градусів */
+.decagon-rot .polygon polygon {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.decagon-rot .polygon {
+    width: 170px;
+    height: 170px;
+}
+
+/* Стилізація полігонів */
+.poly-booking .polygon polygon {
+    fill: #FCD043;
+    stroke: none;
+
+}
+.poly-booking {
+    position: relative;
+}
+.poly-booking p {
+    position: absolute;
+    top: 45%;
+    left: 26%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.poly-stroke-green {
+    position: relative;
+}
+.poly-stroke-green .polygon polygon {
+    fill: none;
+    stroke: rgba(255, 252, 246, 0.32);
+    stroke-width: 1px;
+}
+
+.double-poly p {
+    width: 200px;
+    position: absolute;
+}
+
+.poly-arrow .polygon polygon {
+    fill: none;
+    stroke: rgba(49, 63, 56, 0.32);
+    stroke-width: 1px;
+}
+.poly-arrow img {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
