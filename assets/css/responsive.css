@@ -1,0 +1,119 @@
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    .p30 {
+        padding: 20px;
+    }
+    .title-wrapper h1 {
+    font-size: 170px;
+    }
+    .preview {
+    font-size: 18px;
+    }
+    .description {
+        font-size: 16px;
+    }
+    .booking-form {
+    height: 125px;
+    }
+    .booking {
+        height: 125px;
+    }
+    .dropdown {
+    width: 370px;
+    height: 125px;
+    padding: 32px;
+    }
+  
+
+    .about-wrapper h2 {
+    font-size: 125px;
+    }
+    .abus-text-wr h5 {
+    font-size: 36px;
+    }
+    .blyamba-wr {
+        width: max-content;
+    }
+    .blyamba-wr img {
+        width: 240px;
+    }
+    .rooms-title-wrapper h2 {
+    font-size: 125px;
+    }
+    .rooms-title-wrapper p {
+    font-size: 18px;
+    }
+    .rooms-text-wrapper h3 {
+    font-size: 36px;
+    }
+
+
+    .facilities-grid-wrapper .inf {
+    font-size: 18px;
+    }
+    .facilities-grid-wrapper h2 {
+    width: 560px;
+    font-size: 125px;
+    }
+    .blyamba-next {
+        display: none;
+    }
+    .facilities-grid-wrapper .img-with-blyamba {
+    width: 335px;
+    align-self: center;
+    }
+    .img-cell {
+    width: 217px;
+    height: 217px;
+    }
+    .number, .title {
+    font-size: 50px;
+    }
+    .accordion-toggle {
+    width: 60px;
+    }
+
+    .best-apartments h2 {
+    font-size: 125px;
+    }
+    .best-apartments p {
+    font-size: 18px;
+    }
+
+
+    .our-gallery .inf {
+        display: none;
+    }
+    .gallery-title-wrapper h2 {
+    font-size: 125px;
+    }
+    .gallery-prymit-wr .polygon {
+    width: 50px;
+    height: 50px;
+}
+.galthree {
+    width: 25%;
+}
+.galfive {
+    width: 25%;
+}
+
+
+    .git-wrapper a {
+    font-size: 50px;
+    }
+    .git-wrapper address, .git-wrapper p {
+    font-size: 18px;
+    }
+    .git-dropdown {
+    width: 370px;
+    height: 125px;
+    padding: 32px;
+    }
+    .git-booking {
+    height: 125px;
+    }
+    .git-title {
+    font-size: 210px;
+    top: 25%;
+}
+}

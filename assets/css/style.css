@@ -50,11 +50,11 @@ a {
     font-size: 22px;
     gap: 20px;
     grid-area: 1 / 2 / 2 / 3;
-    align-self: start;
-    margin-top: 30px;
+    align-self: center;
 }
 
 .down {
+    width: 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -234,21 +234,25 @@ a {
     position: relative;
     justify-self: end;
 }
-.plg-style {
+.double-poly {
+    width: 200px;
     position: relative;
     justify-self: end;
     margin-right: 100px;
-    background-image: url(../img/icons/down.png);
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: bottom 45px center;
 }
-.plg-style p {
+.double-poly p {
     position: absolute;
     font-weight: 400;
     font-size: 14px;
-    top: 20%;
+    top: 26%;
+    left: 33%;
     text-align: left;
+}
+.double-poly img {
+    width: 16px;
+    position: absolute;
+    bottom: 23%;
+    left: 46%;
 }
 .tc {
     width: 200px;
@@ -299,8 +303,11 @@ a {
 }
 .pres-img {
     width: 60%;
-
+    height: 100%;
     grid-area: 1/1/2/2;
+    object-fit: contain;
+    object-position: center;
+    display: block;
 }
 .rooms-wrapper .poly-arrow {
     justify-self: start;
@@ -340,6 +347,14 @@ a {
     height: 100%;
     overflow: hidden;
 }
+.rooms-booking-wrapper .main-pres-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
 .rooms-booking-wrapper .poly-booking {
     z-index: 10;
     position: absolute;
@@ -519,7 +534,7 @@ a {
     text-align: left;
 }
 .gallery-title-wrapper {
-    width: min-content;
+    width: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -711,7 +726,7 @@ a {
 }
 .git-title {
     font-weight: 400;
-    font-size: 300px;
+    font-size: 290px;
     line-height: 300px;
     text-transform: uppercase;
     display: flex;
@@ -826,7 +841,7 @@ footer {
   color: #FCD043;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
     .burger {
         display: none;
     }
