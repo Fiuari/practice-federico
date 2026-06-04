@@ -117,3 +117,301 @@
     top: 25%;
 }
 }
+
+@media screen and (max-width: 1439px) {
+    .burger {
+        width: 40px;
+        height: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: none;
+        border: none;
+    }
+    .burger span {
+        width: 100%;
+        height: 2px;
+
+    }
+    .nav, .contact, .adress-h, .socials-h {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .hero {
+    height: 850px;
+}
+    .title-wrapper {
+    height: 200px;
+    display: grid;
+    grid-template-rows: 65% 35%;
+    grid-template-columns: 60% 10% 30%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+    .title-wrapper h1 {
+    font-size: 120px;
+    }
+    .preview {
+    font-size: 14px;
+    }
+    .buttons {
+        display: none;
+    }
+    .octagon .polygon {
+        width: 45px;
+        height: 45px;
+    }
+    .octagon {
+        justify-self: center;
+    }
+    .down {
+        width: 8px;
+    }
+    .description {
+    font-size: 13px;
+    width: 100%;
+    grid-area: 1/3/2/4;
+    }
+
+    .booking-form {
+    height: 100px;
+    }
+    .booking {
+        height: 100px;
+        width: 250px;
+    }
+    .dropdown {
+    width: 250px;
+    height: 100px;
+    padding: 20px;
+    }
+    .enum-wrapper {
+        height: 487px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+    .inf-wrapper {
+    font-size: 16px;
+    }
+
+    .about-wrapper h2 {
+    font-size: 100px;
+    line-height: 110px;
+    }
+    .abus-text-wr h5 {
+    font-size: 28px;
+    }
+    .abus-text-wr p {
+    width: 250px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.double-poly {
+    display: none;
+}
+
+    .blyamba-wr {
+        width: max-content;
+    }
+    .blyamba-wr img {
+        width: 212px;
+    }
+    .blyamba {
+        background-image: url(../img/icons/flower.png);
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    transform: rotate(230deg);
+    position: absolute;
+    top: -55%;
+    left: -68%;
+    }
+    .circle-text {
+        width: 70px;
+    }
+
+
+    .rooms-title-wrapper h2 {
+    font-size: 100px;
+    }
+    .rooms-title-wrapper p {
+        width: 200px;
+    font-size: 16px;
+    }
+    .pres-img {
+        display: none;
+    }
+    .poly-arrow .polygon {
+        width: 105px;
+    }
+    .poly-arrow img {
+        width: 24px;
+    }
+
+    .rooms-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+    .rooms-wrapper {
+  grid-template-columns: 16% 43% 40%;
+}
+.rooms-text-wrapper p {
+    width: 250px;
+}
+.rooms-text-wrapper {
+    grid-area: 1/2/3/4;
+    align-self: self-start;
+}
+.poly-booking .polygon {
+    width: 120px;
+}
+.rooms-booking-wrapper .poly-booking {
+    right: 1%;
+    bottom: 1%;
+
+}
+.poly-booking p {
+    top: 45%;
+    left: 25%;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.our-facilities {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.facilities-grid-wrapper {
+    height: 650px;
+}
+.facilities-grid-wrapper .inf {
+    font-size: 16px;
+    text-align: right;
+    grid-area: 1/3/2/4;
+    }
+    .img-with-blyamba {
+        display: none;
+    }
+    .facilities-grid-wrapper h2 {
+    width: 470px;
+    font-size: 100px;
+    }
+    .blyamba-next {
+        display: none;
+    }
+    .facilimg {
+        width: 80%;
+        grid-area: 1/1/3/2;
+        align-self: center;
+    }
+    .img-cell {
+    width: 180px;
+    height: 180px;
+    }
+    .number, .title {
+    font-size: 36px;
+    }
+    .accordion-toggle {
+    width: 50px;
+    }
+    .best-apartments h2 {
+    font-size: 100px;
+    }
+    .best-apartments {
+        height: 649px;
+    }
+
+    .our-gallery {
+    height: 135vw;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.blyamba-gallery {
+     width: 70px;
+    height: 70px;
+    background-image: url(../img/icons/flower.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+.blyamba-gallery .circle-text {
+    width: 70px;
+
+}
+    .our-gallery .inf {
+        display: none;
+    }
+    .gallery-title-wrapper h2 {
+    font-size: 100px;
+    }
+    .gallery-prymit-wr .polygon {
+    width: 50px;
+    height: 50px;
+}
+.galthree {
+    width: 25%;
+}
+.galfive {
+    width: 35%;
+}
+
+
+.get-in-touch {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.git-wrapper a {
+    font-size: 38px;
+    }
+    .git-wrapper address, .git-wrapper p {
+    font-size: 18px;
+    }
+    .git-dropdown {
+    width: 230px;
+    height: 100px;
+    padding: 20px;
+    }
+    .git-booking {
+        width: 230px;
+    height: 100px;
+    }
+    .git-title {
+    font-size: 150px;
+    top: 25%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    }
+
+footer {
+    height: 300px;
+      gap: 1px;
+}
+    .footsec {
+  width: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-right: 150px;
+}
+    .footertitle {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #1B3B36;
+}
+
+.footsec p {
+  font-weight: 400;
+  width: 235px;
+  font-size: 13px;
+  line-height: 28px;
+  color: #1B3B36;
+}
+}

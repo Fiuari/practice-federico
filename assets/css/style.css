@@ -130,6 +130,9 @@ a {
     cursor: pointer;
     text-transform: uppercase;
 }
+.enum-wrapper .poly-booking {
+    display: none;
+}
 .inf-wrapper {
     display: flex;
     justify-content: space-between;
