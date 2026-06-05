@@ -19,8 +19,9 @@ a {
 .hero {
     display: flex;
     flex-direction: column;
-    height: 1430px;
+    height: auto;
 }
+
 .title-wrapper {
     height: 400px;
     display: grid;
@@ -384,13 +385,14 @@ a {
     grid-template-rows: 50% 30%;
 }
 .facilities-grid-wrapper .inf {
-    height: 800px;
+    height: auto;
     font-weight: 400;
     font-size: 26px;
     text-transform: uppercase;
     text-align: left;
     grid-area: 1/1/2/2;
 }
+
 .facilities-grid-wrapper h2 {
     width: 657px;
     font-weight: 400;
@@ -545,13 +547,17 @@ a {
     margin: 0 auto;
 }
 .blyamba-gallery {
-     width: 200px;
-    height: 200px;
-    background-image: url(../img/icons/flower.png);
-    background-size: 32px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/icons/flower.png);
+    background-size: 36px;
     background-repeat: no-repeat;
     background-position: center;
     transform: rotate(-90deg);
+}
+.blyamba-gallery svg {
+  width: 100%;
+  height: 100%;
 }
 .gallery-title-wrapper h2 {
     font-weight: 400;
@@ -590,6 +596,9 @@ a {
     right: 0;
     top: 73%;
     z-index: 10;
+}
+.galonemob, .galtwomob, .galthreemob {
+    display: none;
 }
 .gallery-prymit-wr .polygon polygon {
     fill: #FCD043;
@@ -669,7 +678,9 @@ a {
   display: flex;
   grid-area: 4/1/5/2;
 }
-
+.git-wrapper .poly-booking {
+    display: none;
+}
 .booking-form {
     height: 150px;
     display: flex;
