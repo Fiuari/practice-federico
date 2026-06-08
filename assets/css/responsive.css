@@ -133,8 +133,23 @@
         height: 2px;
 
     }
+/* ховаємо десктопні елементи хедера */
     .nav, .contact, .adress-h, .socials-h {
         display: none;
+    }
+
+    /* але для бургер-меню — показуємо всі елементи */
+    .mobile-menu .nav {
+        display: block;
+    }
+    .mobile-menu .contact {
+        display: block;
+    }
+    .mobile-menu .adress-h {
+        display: block;
+    }
+    .mobile-menu .socials-h {
+        display: flex;
     }
 }
 

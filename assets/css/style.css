@@ -6,9 +6,18 @@
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (min-width:1920px) {
+.mobile-menu {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+}
+.main-menu {
+    gap: 70px;
+}
+}
 .main-menu {
     display: flex;
-    gap: 70px;
     list-style-type: none;
 }
 a {
