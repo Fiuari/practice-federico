@@ -1,0 +1,40 @@
+.swiper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+}
+
+/*
+  Rooms slider (в проекті Swiper реалізований кастомно JS:
+  script.js змінює opacity/transform на .rooms-wrapper)
+*/
+.rooms-wrapper {
+  position: absolute;
+  inset: 0 0 auto 0; /* top:0; right:0; bottom:auto; left:0 */
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  /* повільна анімація “рулону” по горизонталі */
+  transition:
+    opacity 1.6s ease,
+    transform 1.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  will-change: transform, opacity;
+}
+
+/* Підстраховка, щоб внутрішні блоки не “ривкували” */
+.rooms-wrapper img,
+.rooms-wrapper .rooms-text-wrapper,
+.rooms-wrapper .rooms-booking-wrapper {
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+/* Якщо десь використовується нативний Swiper markup */
+.swiper-slide {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
