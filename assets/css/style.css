@@ -499,9 +499,55 @@ a {
     border: none;
     background: none;
 }
-.accordion-content {
+.accordion-item p {
     display: none;
 }
+
+
+/* Розгорнутий стан */
+.accordion-item.open {
+  background-color: #fdfaf4;
+  height: auto;
+}
+.accordion-item.open header {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 40% 60%;
+    height: max-content;
+    align-items: start;
+}
+.accordion-item.open .accordion-toggle img {
+  transform: rotate(90deg);
+  transition: transform 0.4s ease;
+}
+.accordion-item.open .accordion-toggle {
+    grid-area: 2/1/3/2;
+    margin: 30px;
+}
+.accordion-item.open .img-cell {
+    grid-area: 1/3/3/4;
+    width: 100%;
+    height: 100%;
+}
+.accordion-item.open .number {
+    grid-area: 1/2/2/3;
+    font-style: 50px;
+}
+.accordion-item.open .title {
+    grid-area: 2/2/3/3;
+    font-style: 50px;
+    
+}
+.accordion-item.open p {
+    display: block;
+    grid-area: 2/2/3/3;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 15%;
+    width: 70%;
+}
+
+
 
 
 /* найкраще */

@@ -29,3 +29,42 @@ arrows.forEach(arrow => {
     showSlide(currentIndex);
   });
 });
+
+
+
+// Accordion toggle (adds .open to the clicked .accordion-item)
+const accordionItems = document.querySelectorAll('.accordion-item');
+
+accordionItems.forEach(item => {
+  const toggle = item.querySelector('.accordion-toggle');
+  if (!toggle) return;
+
+  toggle.addEventListener('click', () => {
+    // close others
+    accordionItems.forEach(otherItem => {
+      if (otherItem !== item) {
+        otherItem.classList.remove('open');
+        const otherToggle = otherItem.querySelector('.accordion-toggle');
+        if (otherToggle) otherToggle.setAttribute('aria-expanded', 'false');
+
+        const otherContent = otherItem.querySelector('.accordion-content');
+        if (otherContent) otherContent.style.maxHeight = null;
+      }
+    });
+
+    const isOpen = item.classList.contains('open');
+    const content = item.querySelector('.accordion-content');
+
+    if (isOpen) {
+      item.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      if (content) content.style.maxHeight = null;
+    } else {
+      item.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      if (content) content.style.maxHeight = content.scrollHeight + 'px';
+    }
+  });
+});
+
+
