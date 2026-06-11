@@ -613,6 +613,7 @@ a {
 .blyamba-gallery svg {
   width: 100%;
   height: 100%;
+  transform: rotate(-90deg);
 }
 .gallery-title-wrapper h2 {
     font-weight: 400;
@@ -920,4 +921,14 @@ footer {
     .socials-h {
         display: none;
     }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease;
+}
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
