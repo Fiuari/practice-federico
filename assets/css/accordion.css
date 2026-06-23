@@ -1,0 +1,22 @@
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.8s ease, opacity 0.8s ease;
+  opacity: 0;
+}
+
+.accordion-item.open .accordion-content {
+  opacity: 1;
+}
+
+.accordion-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+/* Анімація стрілки */
+.accordion-item.open .accordion-toggle img {
+  transform: rotate(90deg);
+}
