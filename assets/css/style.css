@@ -63,11 +63,14 @@ a {
     align-self: center;
 }
 
+.buttons img {
+    width: 35px;
+}
 .down {
     width: 16px;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 45%;
+    left: 43%;
     transform: translate(-50%, -50%);
 }
 
@@ -244,6 +247,7 @@ a {
     left: -40%;
 }
 .blyamba-wr {
+    width: 60%;
     position: relative;
     justify-self: end;
 }
@@ -375,7 +379,9 @@ a {
     bottom: 3%;
 
 }
-
+.poly-arrow img {
+    width: 36px;
+}
 
 /* пріколюхи */
 
