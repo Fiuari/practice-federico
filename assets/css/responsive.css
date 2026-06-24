@@ -47,6 +47,9 @@
     }
 
 
+    .facilities-grid-wrapper {
+        height: 50vw;
+    }
     .facilities-grid-wrapper .inf {
     font-size: 18px;
     }
