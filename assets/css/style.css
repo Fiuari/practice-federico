@@ -634,14 +634,17 @@ a {
     position: absolute;
 }
 .galone {
+    width: 40%;
     left: 30%;
     top: 37%;
 }
 .galtwo {
+    width: 23%;
     left: -6%;
     top: 20%;
 }
 .galthree {
+    width: 20%;
     top: 60%;
 }
 .galfour {
